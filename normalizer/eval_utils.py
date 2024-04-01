@@ -19,7 +19,7 @@ def read_manifest(manifest_path: str):
 
 
 def write_manifest(
-    references: list, transcriptions: list, model_id: str, dataset_path: str, dataset_name: str, split: str
+    references: list, transcriptions: list, model_id: str, dataset_path: str, dataset_name: str, split: str, hypothesis: list = None
 ):
     """
     Writes a manifest file (jsonl format) and returns the path to the file.
@@ -52,12 +52,13 @@ def write_manifest(
     manifest_path = os.path.join(basedir, f"MODEL_{model_id}_DATASET_{dataset_path}_{dataset_name}_{split}.jsonl")
 
     with open(manifest_path, "w", encoding='utf-8') as f:
-        for idx, (text, transcript) in enumerate(zip(references, transcriptions)):
+        for idx, (text, transcript, hyp) in enumerate(zip(references, transcriptions, hypothesis)):
             datum = {
                 "audio_filepath": f"sample_{idx}",  # dummy value for Speech Data Processor
                 "duration": 0.0,  # dummy value for Speech Data Processor
                 "text": text,
                 "pred_text": transcript,
+                "hypotheses": hyp,
             }
             f.write(f"{json.dumps(datum, ensure_ascii=False)}\n")
     return manifest_path

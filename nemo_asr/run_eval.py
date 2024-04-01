@@ -49,7 +49,7 @@ def write_audio(buffer, cache_prefix) -> list:
 
 def pack_results(results: list, buffer, transcriptions):
     for sample, transcript in zip(buffer, transcriptions):
-        result = {'reference': sample['reference'], 'pred_text': transcript}
+        result = {'reference': sample['reference'], 'pred_text': transcript[0].text, 'hypotheses': [h.text for h in transcript]}
         results.append(result)
     return results
 
@@ -62,7 +62,12 @@ def buffer_audio_and_transcribe(model: ASRModel, dataset, batch_size: int, cache
 
         if len(buffer) == batch_size:
             filepaths = write_audio(buffer, cache_prefix)
-            transcriptions = model.transcribe(filepaths, batch_size=batch_size, verbose=False)
+            try:
+                transcriptions = model.transcribe(filepaths, return_hypotheses=True, batch_size=32, channel_selector='average', verbose=False)[1]
+            except:
+                # if transcriptions fail, print error and continue
+                print(f"Transcription failed for batch: {filepaths}")
+                continue
             # if transcriptions form a tuple (from RNNT), extract just "best" hypothesis
             if type(transcriptions) == tuple and len(transcriptions) == 2:
                 transcriptions = transcriptions[0]
@@ -71,7 +76,12 @@ def buffer_audio_and_transcribe(model: ASRModel, dataset, batch_size: int, cache
 
     if len(buffer) > 0:
         filepaths = write_audio(buffer, cache_prefix)
-        transcriptions = model.transcribe(filepaths, batch_size=batch_size, verbose=False)
+        try:
+            transcriptions = model.transcribe(filepaths, return_hypotheses=True, batch_size=32, channel_selector='average', verbose=False)[1]
+        except:
+            # if transcriptions fail, print error and continue
+            print(f"Transcription failed for batch: {filepaths}")
+            return results
         # if transcriptions form a tuple (from RNNT), extract just "best" hypothesis
         if type(transcriptions) == tuple and len(transcriptions) == 2:
             transcriptions = transcriptions[0]
@@ -96,6 +106,12 @@ def main(args):
         asr_model = ASRModel.restore_from(args.model_id, map_location=device)
     else:
         asr_model = ASRModel.from_pretrained(args.model_id, map_location=device)  # type: ASRModel
+    if 'canary' in args.model_id:
+        # update dcode params
+        canary_decode_cfg = asr_model.cfg.decoding
+        canary_decode_cfg.beam.beam_size = 5
+        canary_decode_cfg.beam.return_best_hypothesis = False
+        asr_model.change_decoding_strategy(canary_decode_cfg)
     asr_model.freeze()
 
     dataset = data_utils.load_data(args)
@@ -119,7 +135,7 @@ def main(args):
 
     # Write manifest results
     manifest_path = data_utils.write_manifest(
-        references, predictions, args.model_id, args.dataset_path, args.dataset, args.split
+        references, predictions, args.model_id, args.dataset_path, args.dataset, args.split, hypothesis=[sample['hypotheses'] for sample in results]
     )
     print("Results saved at path:", os.path.abspath(manifest_path))
 
