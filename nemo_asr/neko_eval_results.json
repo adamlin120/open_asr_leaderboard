@@ -1,0 +1,389 @@
+[
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "fleurs",
+        "target_lang": "Portuguese"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "fleurs",
+        "target_lang": "Chinese"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "fleurs",
+        "target_lang": "Japanese"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "fleurs",
+        "target_lang": "French"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "fleurs",
+        "target_lang": "Spanish"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "fleurs",
+        "target_lang": "Italian"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "fleurs",
+        "target_lang": "Welsh"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "covost2",
+        "target_lang": "Latvian"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "covost2",
+        "target_lang": "Slovenian"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "covost2",
+        "target_lang": "Chinese"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "covost2",
+        "target_lang": "Catalan"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "covost2",
+        "target_lang": "Turkish"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "covost2",
+        "target_lang": "Tamil"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "covost2",
+        "target_lang": "Japanese"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "covost2",
+        "target_lang": "German"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "covost2",
+        "target_lang": "Indonesian"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "covost2",
+        "target_lang": "Swedish"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "covost2",
+        "target_lang": "Estonian"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "covost2",
+        "target_lang": "Arabic"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "covost2",
+        "target_lang": "Welsh"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "covost2",
+        "target_lang": "Persian"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "covost2",
+        "target_lang": "Mongolian"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "mustc",
+        "target_lang": "Portuguese"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "mustc",
+        "target_lang": "Chinese"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "mustc",
+        "target_lang": "Dutch"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "mustc",
+        "target_lang": "Turkish"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "mustc",
+        "target_lang": "Vietnamese"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "mustc",
+        "target_lang": "Russian"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "mustc",
+        "target_lang": "Japanese"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "mustc",
+        "target_lang": "German"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "mustc",
+        "target_lang": "French"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "mustc",
+        "target_lang": "Spanish"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "mustc",
+        "target_lang": "Arabic"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "mustc",
+        "target_lang": "Italian"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "mustc",
+        "target_lang": "Romanian"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "speech_translation",
+        "data_source": "mustc",
+        "target_lang": "Persian"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "machine_translation",
+        "data_source": "mustc",
+        "target_lang": "Chinese"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "machine_translation",
+        "data_source": "mustc",
+        "target_lang": "Vietnamese"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "machine_translation",
+        "data_source": "mustc",
+        "target_lang": "Japanese"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "machine_translation",
+        "data_source": "mustc",
+        "target_lang": "Turkish"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "machine_translation",
+        "data_source": "mustc",
+        "target_lang": "Persian"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "machine_translation",
+        "data_source": "mustc",
+        "target_lang": "Arabic"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "machine_translation",
+        "data_source": "fleurs",
+        "target_lang": "Spanish"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "machine_translation",
+        "data_source": "fleurs",
+        "target_lang": "Portuguese"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "machine_translation",
+        "data_source": "fleurs",
+        "target_lang": "Italian"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "machine_translation",
+        "data_source": "fleurs",
+        "target_lang": "French"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "machine_translation",
+        "data_source": "wmt20",
+        "target_lang": "Chinese"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "machine_translation",
+        "data_source": "wmt20",
+        "target_lang": "Czech"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "machine_translation",
+        "data_source": "wmt20",
+        "target_lang": "Romanian"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "machine_translation",
+        "data_source": "wmt20",
+        "target_lang": "Japanese"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "machine_translation",
+        "data_source": "wmt20",
+        "target_lang": "Lithuanian"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "machine_translation",
+        "data_source": "covost2",
+        "target_lang": "Chinese"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "machine_translation",
+        "data_source": "covost2",
+        "target_lang": "Japanese"
+    },
+    {
+        "dataset": "yentinglin/ast",
+        "config": "machine_translation",
+        "data_source": "covost2",
+        "target_lang": "Persian"
+    },
+    {
+        "dataset": "yentinglin/asr",
+        "config": "nvidia-canary-1b_ami",
+        "wer_before_correction": 14.11,
+        "wer_after_correction": 12.92,
+        "relative_improvement": 8.433734939759033
+    },
+    {
+        "dataset": "yentinglin/asr",
+        "config": "nvidia-parakeet-rnnt-0.6b_ami",
+        "wer_before_correction": 18.65,
+        "wer_after_correction": 18.08,
+        "relative_improvement": 3.0563002680965163
+    },
+    {
+        "dataset": "yentinglin/asr",
+        "config": "nvidia-parakeet-rnnt-0.6b_earnings22",
+        "wer_before_correction": 13.75,
+        "wer_after_correction": 13.67,
+        "relative_improvement": 0.5818181818181823
+    },
+    {
+        "dataset": "yentinglin/asr",
+        "config": "nvidia-parakeet-rnnt-0.6b_gigaspeech",
+        "wer_before_correction": 9.87,
+        "wer_after_correction": 10.17,
+        "relative_improvement": -3.0395136778115575
+    },
+    {
+        "dataset": "yentinglin/asr",
+        "config": "nvidia-parakeet-rnnt-0.6b_spgispeech",
+        "wer_before_correction": 3.46,
+        "wer_after_correction": 3.52,
+        "relative_improvement": -1.7341040462427761
+    },
+    {
+        "dataset": "yentinglin/asr",
+        "config": "nvidia-parakeet-rnnt-1.1b_earnings22",
+        "wer_before_correction": 12.99,
+        "wer_after_correction": 13.01,
+        "relative_improvement": -0.15396458814472344
+    },
+    {
+        "dataset": "yentinglin/asr",
+        "config": "nvidia-parakeet-rnnt-1.1b_gigaspeech",
+        "wer_before_correction": 9.78,
+        "wer_after_correction": 10.08,
+        "relative_improvement": -3.0674846625766947
+    },
+    {
+        "dataset": "yentinglin/asr",
+        "config": "nvidia-parakeet-rnnt-1.1b_spgispeech",
+        "wer_before_correction": 3.09,
+        "wer_after_correction": 3.27,
+        "relative_improvement": -5.825242718446607
+    },
+    {
+        "dataset": "yentinglin/asr",
+        "config": "nvidia-parakeet-rnnt-1.1b_voxpopuli",
+        "wer_before_correction": 5.16,
+        "wer_after_correction": 5.24,
+        "relative_improvement": -1.5503875968992262
+    }
+]

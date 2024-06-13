@@ -1,0 +1,65 @@
+[
+    {
+        "dataset": "yentinglin/asr",
+        "config": "nvidia-canary-1b_ami",
+        "wer_before_correction": 14.11,
+        "wer_after_correction": 12.83,
+        "relative_improvement": 9.071580439404674
+    },
+    {
+        "dataset": "yentinglin/asr",
+        "config": "nvidia-parakeet-rnnt-0.6b_ami",
+        "wer_before_correction": 18.65,
+        "wer_after_correction": 18.22,
+        "relative_improvement": 2.3056300268096503
+    },
+    {
+        "dataset": "yentinglin/asr",
+        "config": "nvidia-parakeet-rnnt-0.6b_earnings22",
+        "wer_before_correction": 13.75,
+        "wer_after_correction": 13.53,
+        "relative_improvement": 1.6000000000000045
+    },
+    {
+        "dataset": "yentinglin/asr",
+        "config": "nvidia-parakeet-rnnt-0.6b_gigaspeech",
+        "wer_before_correction": 9.87,
+        "wer_after_correction": 10.16,
+        "relative_improvement": -2.9381965552178415
+    },
+    {
+        "dataset": "yentinglin/asr",
+        "config": "nvidia-parakeet-rnnt-0.6b_spgispeech",
+        "wer_before_correction": 3.46,
+        "wer_after_correction": 3.42,
+        "relative_improvement": 1.1560693641618507
+    },
+    {
+        "dataset": "yentinglin/asr",
+        "config": "nvidia-parakeet-rnnt-1.1b_earnings22",
+        "wer_before_correction": 12.99,
+        "wer_after_correction": 12.76,
+        "relative_improvement": 1.7705927636643606
+    },
+    {
+        "dataset": "yentinglin/asr",
+        "config": "nvidia-parakeet-rnnt-1.1b_gigaspeech",
+        "wer_before_correction": 9.78,
+        "wer_after_correction": 10.03,
+        "relative_improvement": -2.556237218813906
+    },
+    {
+        "dataset": "yentinglin/asr",
+        "config": "nvidia-parakeet-rnnt-1.1b_spgispeech",
+        "wer_before_correction": 3.09,
+        "wer_after_correction": 3.14,
+        "relative_improvement": -1.6181229773462869
+    },
+    {
+        "dataset": "yentinglin/asr",
+        "config": "nvidia-parakeet-rnnt-1.1b_voxpopuli",
+        "wer_before_correction": 5.16,
+        "wer_after_correction": 5.29,
+        "relative_improvement": -2.519379844961238
+    }
+]

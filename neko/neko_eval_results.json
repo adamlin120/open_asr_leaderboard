@@ -1,0 +1,9 @@
+[
+    {
+        "dataset": "yentinglin/asr_correction_datasets",
+        "config": "ami-distil-large-v3",
+        "wer_before_correction": 17.7,
+        "wer_after_correction": 16.53,
+        "relative_improvement": 6.610169491525414
+    }
+]

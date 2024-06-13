@@ -64,7 +64,8 @@ def buffer_audio_and_transcribe(model: ASRModel, dataset, batch_size: int, cache
             filepaths = write_audio(buffer, cache_prefix)
             try:
                 transcriptions = model.transcribe(filepaths, return_hypotheses=True, batch_size=32, channel_selector='average', verbose=False)[1]
-            except:
+            except Exception as e:
+                print(e)
                 # if transcriptions fail, print error and continue
                 print(f"Transcription failed for batch: {filepaths}")
                 continue
@@ -78,7 +79,8 @@ def buffer_audio_and_transcribe(model: ASRModel, dataset, batch_size: int, cache
         filepaths = write_audio(buffer, cache_prefix)
         try:
             transcriptions = model.transcribe(filepaths, return_hypotheses=True, batch_size=32, channel_selector='average', verbose=False)[1]
-        except:
+        except Exception as e:
+            print(e)
             # if transcriptions fail, print error and continue
             print(f"Transcription failed for batch: {filepaths}")
             return results
@@ -112,6 +114,12 @@ def main(args):
         canary_decode_cfg.beam.beam_size = 5
         canary_decode_cfg.beam.return_best_hypothesis = False
         asr_model.change_decoding_strategy(canary_decode_cfg)
+    elif 'parakeet' in args.model_id:
+        decode_cfg = asr_model.cfg.decoding
+        decode_cfg.beam.beam_size = 5
+        decode_cfg.beam.return_best_hypothesis = False
+        decode_cfg.strategy='beam'
+        asr_model.change_decoding_strategy(decode_cfg)
     asr_model.freeze()
 
     dataset = data_utils.load_data(args)
